@@ -1,0 +1,38 @@
+FETİH — Figma UI integration
+
+Implemented source nodes
+- Gold button measurements and states: 1160:5810
+- Blue primary button states: 1181:7248
+- Adaptive dark panel: 1153:5468
+
+Godot mapping
+- scripts/fantasy_theme.gd is the shared Theme factory.
+- battle_hud.gd and game_shell.gd consume the same theme.
+- Original Figma vector layers are stored in assets/ui/figma and used through
+  stretch-safe StyleBoxTexture margins.
+- Normal, hover, pressed, focus and disabled states are explicit.
+- The selected augmentation card is raised, dimming the other cards, adds a
+  text marker, and still requires a separate confirmation click.
+- Attack/defend orders persistently expose the active state using pressed state
+  plus a text marker.
+- Disabled recruitment cards state why: insufficient gold, population cap,
+  full queue, or ended battle.
+- Existing original Fetih card art and licensed character portraits remain.
+  Third-party game logos and character art shown in the community tutorial are
+  not redistributed.
+- Beaufort for LOL was not present/licensed locally; Georgia/Noto Serif system
+  fallback preserves the intended fantasy serif hierarchy.
+
+Verification
+- GPU interaction test: card mouse selection, confirmation, next-offer reset,
+  close battle camera, two-file formation and narrow bridge passed.
+- Shell test: main flow, briefing, pause, settings, frozen paused simulation and
+  mandatory card choice passed.
+- Full combat smoke test passed every reported gameplay assertion.
+- Visual captures reviewed at the project's 1280x720 window size.
+
+Known engine-runner diagnostics
+- Windows root certificate store warning is emitted by this Godot build.
+- Shell test shutdown reports seven texture RIDs. It occurs during forced test
+  scene teardown and does not fail the test; production lifetime profiling is a
+  separate performance task.

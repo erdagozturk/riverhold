@@ -1,0 +1,1 @@
+User-provided 2D HD Character Knighttest.zip. 15 columns x 8 directions; 128px cells. No license document in supplied archive. Experiment only, not in the main battlefield. Effects and shadows baked into sprite pixels.

@@ -1,0 +1,6 @@
+Source: user-provided Figma community copy ea99jeRV2joXkhtHRUYhPr.
+Read via figma-design-to-code, exported unchanged via Figma Plugin API after URL downloads failed.
+Blue state backgrounds: 1181:7250, 1181:7253, 1181:7256, 1181:7259. Panel background: 1153:5427.
+Original SVG dimensions preserved. Godot uses stretch-safe StyleBoxTexture margins.
+Gold button colors/padding follow 1160:5810 context. Georgia system font substitutes unavailable Beaufort for LOL; not a pixel-identical font match.
+Original generated upgrade card artwork retained. No third-party game portraits/logos copied.

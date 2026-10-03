@@ -1,0 +1,38 @@
+2026-09-30 — Playable prototype update
+
+Implemented:
+- 18 stack-limited augments plus same-rarity emergency fallback cards.
+- Every 30 seconds, a single shared rarity roll: Silver 55%, Gold 33%, Prismatic 12%.
+- Both teams receive three distinct cards from that tier. Player chooses; AI chooses randomly.
+- Modifiers apply to existing and future units, independently per team.
+- Added counters: tank receives 55% arrow damage; fast unit deals 135% damage to ranged; tank deals 120% damage to fast units.
+- Healing, critical hits, tank splash, protective aura, melee lifesteal and one-use low-health recovery.
+- Six-slot FIFO recruitment queue. Gold reserved once, production 1.0/1.8/2.6 seconds, training augment reduces duration.
+- Role-specific KayKit Rogue, Ranger and Barbarian, hand-slot weapons, shared animation libraries, bow draw/release and projectile origin.
+- Portrait recruitment deck, cost/affordability state, training progress, army commands, rarity choice cards, owned effects and damaged-unit health bars.
+- Larger gold coins; removed floating +15 label.
+- Six-minute visual day/night cycle with brighter torches at night. No gameplay lighting advantage.
+- Billboard noise flame replaces solid sphere. Subtle team rim glow preserves character colors.
+- Highlands Barracks plus four additional huts per village. Roads and vegetation exclusion share authored entrances. Both teams share symmetric footprints.
+- Road soil/edge fading and bridge dirt overlay. Existing modular houses and castle retained.
+
+Validation:
+- 600 randomized offers: correct shared rarity, three unique choices, capped-pool fallback.
+- Existing and newly spawned units receive the correct team's upgrades.
+- Ranged resistance, bow attachment/animation, pause/resume and recruitment one-time charge tests passed.
+- 40-unit deployment, symmetrical terrain, unobstructed roads and altar victory regression passed.
+- Main combat smoke checks passed after updating the obsolete fixed +20% card assertion.
+- GPU rendered HUD, card screen, day/night and close-up character models; portrait sizing and team tint corrected.
+
+Sources:
+https://visionsmind.itch.io/highlands-fantasy-pack-3d — CC0 assets provided by user; provenance in licenses/Highlands_CC0.txt.
+https://www.leagueoflegends.com/en-au/news/dev/dev-augmentmaxxing-aram-mayhem/ — role-centered augment design inspiration.
+https://blitz.gg/tr/lol/aram-mayhem-augments — user reference; direct web fetch unavailable, no claim to have extracted its full list.
+
+Remaining quality work:
+- Long-match balance and variety need playtesting; numerical counter tests are not proof of balanced win rates.
+- Highlands TownCenter/WatchTower/Windmill, Kenney skies and retro textures are imported, not all placed/applied. No claim that every supplied asset is active.
+- Current flame/wear effects and village composition are an improvement pass, not a match to the reference's finished art quality.
+- GPU teardown reports seven leaked texture RIDs; test environment also reports certificate/shader-cache write warnings. No script or shader compilation errors in the final GPU checks.
+
+Launch current source via the existing Oyunu Baslat.cmd; no separate EXE export was built.

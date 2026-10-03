@@ -1,0 +1,18 @@
+Fetih Game - new ambient animal models
+Author: Quaternius
+License: Creative Commons CC0 1.0 Universal
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+
+Cat, Dog, Eagle:
+https://opengameart.org/content/animated-animales-low-poly
+Source download: https://opengameart.org/sites/default/files/Animal%20Pack%20Vol.2%20by%20%40Quaternius.zip
+
+Bird, Chick:
+https://opengameart.org/content/5-low-poly-animals
+Source download: https://opengameart.org/sites/default/files/Animals%20Pack%20by%20Quaternius.zip
+
+Downloaded 2026-09-29 from the author's OpenGameArt uploads, labeled CC0.
+Original Blender files converted to GLB with their animation actions.
+Legacy Diffuse BSDF materials converted to Principled, preserving base colors.
+Game-side normalization: grounded, centered, uniform scale; Cat/Dog/Chick +X forward corrected to +Z.
+Human villagers reuse the project's existing KayKit Rogue; no new human-model license is introduced.

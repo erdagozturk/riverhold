@@ -1,0 +1,25 @@
+30 Eylül 2026 — Tek çağ geliştirme geçişi
+Kapsam: Tek çağ, köprü muharebesi. Sonraki çağlar ve bu çağların asetleri kapsam dışı.
+
+Tamamlananlar:
+- Yerleşim başına 22 yapı/arsa. Dış mahalle yolları ve kırmızı köyde görsel yerleşim farkları. Savaş hedefleri ve mesafeler korundu.
+- Kaynağı olmayan şelaleler kaldırıldı; devam eden vadi nehri korundu.
+- Oyun sırasında alan derinliği bulanıklığı kapatıldı; uzaklaşma sınırı genişletildi.
+- Yaprak ve çatı renkleri yeniden ayarlandı.
+- Kenney Adventure paketi ile ayrı birlik, kaynak ve emir panelleri; fareyle duraklatma düğmesi.
+- Tek çağ başlangıç ekranı, savaş açıklaması, duraklatma, ses ve tam ekran ayarı, ana menüye dönüş onayı.
+- Tamamlanan maç/galibiyet sayıları ve ses tercihi yerel user://preferences.cfg içinde saklanır. Maç ortasında kaydetme yok.
+- 3D konumsal savaş sesleri; bina giriş güzergâhları çim sorgusu başına tekrar hesaplanmıyor.
+
+Doğrulama:
+- Köy/çatışma testi: 12 kontrol geçti, 40 birlik savaş alanına ulaştı, sunak yıkımı maçı bitirdi.
+- Güçlendirme testi: 600 seçenek grubu, nadirlik eşitliği, üç farklı kart, yeni/mevcut birliğe etki, üretim sırasında tek ücret.
+- Efekt testi: ölüm ödülü tek kez, materyal bağımsızlığı, efekt temizliği.
+- Menü testi: başlangıç, hazırlık, duraklatma, ayarlar, dururken zamanın sabit kalması, Esc ile zorunlu kart seçiminin atlanamaması.
+- GPU üzerinde HUD ve menü görüntüsü kontrol edildi.
+
+Açık işler:
+- Referans görselin yoğunluğu, doğal yol kenarları, su ve arazi geçişleri henüz hedef seviyesinde değil.
+- Sivil roller hâlâ sınırlı; üretim/taşıma faaliyetleri ve bina işlevleri tamamlanmadı.
+- Uzun maç dengelemesi, ayrıntılı performans profili ve ses seviyesi dinleme kontrolü gerekiyor.
+- GPU test kapanışında 7 Texture RID uyarısı sürüyor; oyun sırasındaki çökme olarak gözlenmedi, kaynağı ayrıca araştırılacak.

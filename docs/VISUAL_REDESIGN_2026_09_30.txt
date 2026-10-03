@@ -1,0 +1,31 @@
+Görsel yön ve dar geçit — 30 Eylül 2026
+
+Kaynak incelemesi
+1. Riot: VALORANT Shaders and Gameplay Clarity
+https://www.riotgames.com/en/news/valorant-shaders-and-gameplay-clarity
+Okunabilir siluetler, kontrollü ışık/materyal cevabı ve performans/görsel kalite dengesi. Bizim uygulamamız: takım rengi tüm modeli örtmüyor; fiziksel oyun sırası ve kamera okunabilirliği öncelikli.
+2. Riot TFT: Augments, Augmented
+https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/augments-augmented/
+Farklı oynama biçimlerini destekleyen güçlendirmeler. Bizim uygulamamız: ortak nadirlik korunuyor, üç seçenek + ayrı onay; ekonomi, saldırı, savunma, hız için farklı sanat.
+3. GDC 2013 Simon Unger: From Stage to Screen
+https://media.gdcvault.com/gdc2013/slides/824727Unger_Simon_FromStageTo.pdf
+Arama özetindeki hazırlık/temas/tepki ve kameradan okunabilir siluet ilkesi kullanıldı; PDF açılması sunucu hatası verdi, tam metin incelenmedi.
+
+Değişiklikler
+- Köprü 6.4 → 3.2 genişlik; 5 yerine 2 birlik yan yana, ±0.55 sıra merkezleri; fiziksel açılma ±0.68.
+- Oyuncu ve rakip aynı sınırları kullanır. Eski sıraya göre test beklentisi güncellendi.
+- Büyük mavi Kenney çerçeveleri kaldırıldı. Koyu zemin, ince altın kenar, serifi başlıklar, üst kaynak paneli, alt üretim/emir/eğitim alanları.
+- Özgün imagegen kart çerçevesi ve dört kategori illüstrasyonu oyuna eklendi. Yazı ve etkileşim Godot bileşenleri.
+- Kart işaretlemek etkiyi uygulamaz; Seç düğmesi gerekir.
+- Savaşı izle: mevcut çatışmaya 0.7 saniyelik kamera yaklaşması. Genel görünüm sıfırlanabilir. Oyun sırasında tilt-shift yok.
+- Ok mesh ekseni uçuş yönüyle hizalandı. Hasarda görsel geri tepme; darbe sesleri iki varyant ve ağır vuruş seviyesi.
+- Köprüde bozuk dokunun yerine ahşap atlası, kenar aşınması; daha yeşil yaprak paleti, kontrollü kontrast; rastgele yaygın su köpüğü azaltıldı.
+
+Geçen kontroller
+- 600 güçlendirme teklifinin nadirlik/benzersizlik kontrolü, üretim sırasında tek ödeme.
+- Dar köprüde 40 birlik konuşlandırma/çatışma/maç bitişi.
+- 20 alanlı smoke çıktısı: iki sıra, hedefleme, dost engeli, ölü temizliği, ok/üs hasarı, animasyon döngüsü, dönüşler.
+- Gerçek mouse olaylarıyla kart işaretleme ve onay, yeni turda seçimin sıfırlanması, yakın kamera.
+
+Sınırlar
+Bu çalışma referans atmosferini tamamladığı iddiası değildir. Vadi kaya biçimleri, yolların araziye kaynaşması, yerleşim yoğunluğu, suyun detay katmanları hâlâ hedef seviyesinde değil. Kullanılan dört illüstrasyon kategori sanatıdır; her kart için benzersiz sanat henüz yok. Kapanışta 7 Texture RID uyarısı sürüyor. Sesler yönsel olarak çalışır ancak ses seviyesi insan tarafından dinlenerek değerlendirilmelidir.

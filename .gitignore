@@ -1,0 +1,9 @@
+.godot/ 
+.import/ 
+export/ 
+builds/ 
+*.tmp 
+*.log 
+# Godot generated/cache files
+.godot/
+.godot_appdata/

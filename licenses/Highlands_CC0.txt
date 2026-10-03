@@ -1,0 +1,6 @@
+Highlands - Fantasy 3D Buildings Pack
+Author: Visions Mind / Vitor Guerreiro
+Source: https://visionsmind.itch.io/highlands-fantasy-pack-3d
+License: Creative Commons Zero v1.0 Universal (author listing checked 2026-09-30).
+Imported FBX meshes converted to GLB. PBR maps resized to 2048px. Collision helper meshes omitted.
+Used: Barracks, Hut. TownCenter, Windmill, WatchTower imported for future village functions.
